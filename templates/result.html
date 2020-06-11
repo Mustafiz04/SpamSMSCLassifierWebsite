@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fb537f619a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container text-center" id="top">
+        <h1>Spam Detector for SMS</h1>
+        <h4>A ML web app, built using Flask and Deployed using Heroku.</h4>
+    </div>
+
+    <div class="container text-center mt-5">
+        {% if prediction==1 %}
+            <h1>Prediction: <span class='text-danger'>Gotcha! This is a SPAM message.</span></h1>
+        {% elif prediction==0 %}
+            <h1>Prediction: <span class='text-success'>Great! This is NOT a spam message.</span></h1>
+        {% endif %}
+
+        <br>
+        <a href="/" class="btn btn-dark">Back</a>
+    </div>
+
+    <div class="container text-center mt-5">
+        <a target="_blank" href="https://github.com/Mustafiz04"><i class="fab fa-github text-dark fa-2x"></i></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/mustafiz-kaifee-91b182190"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a target="_blank" href="http://www.instagram.com/codesthaan"><i class="fab fa-instagram text-danger fa-2x"></i></a>
+        <br>
+        Made with ❤ by <a href="https://mustafizkaifee.herokuapp.com/" target="_blank">Mustafiz Kaifee</a>
+    </div>
+
+
+</body>
+</html>
